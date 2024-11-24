@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Table - FurnitureHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="customization.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">FurnitureHub</div>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="chair-customization.html">Chairs</a></li>
+                    <li><a href="table-customization.html">Tables</a></li>
+                    <li><a href="sofa-customization.html">Sofas</a></li>
+                   
+                    <li><a href="logout.html">Logout</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Customization Section -->
+    <section class="customization">
+        <div class="product-details">
+            <img id="productImage" src="table-pine-black.jpg" alt="Modern Table" onerror="this.src='default-table.jpg';">
+            <h2>Customize Your Table</h2>
+            <p>$499.99</p>
+        </div>
+
+        <div class="customization-options">
+            <h3>Select Customization Options</h3>
+
+            <!-- Material Selection -->
+            <div class="option-group">
+                <label for="material">Choose Material:</label>
+                <select id="material" onchange="updateImage()">
+                    <option value="pine">Pine</option>
+                    <option value="steel">Steel</option>
+                    <option value="plastic">Plastic</option>
+                </select>
+            </div>
+
+            <!-- Color Selection -->
+            <div class="option-group">
+                <label for="color">Choose Color:</label>
+                <select id="color" onchange="updateImage()">
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                </select>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button id="addToCartBtn" class="btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FurnitureHub. All rights reserved.</p>
+    </footer>
+
+    <script src="table-customization.js"></script>
+</body>
+</html>

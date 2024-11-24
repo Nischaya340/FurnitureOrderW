@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review - FurnitureHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+
+    <!-- Review Section -->
+    <section class="review">
+        <h1>Leave a Review</h1>
+
+        <form id="reviewForm">
+            <div class="product-selection">
+                <label for="product">Select Product:</label>
+                <select id="product" required>
+                    <option value="Stylish Chair">Stylish Chair</option>
+                    <option value="Modern Table">Modern Table</option>
+                    <option value="Luxury Sofa">Luxury Sofa</option>
+                </select>
+            </div>
+
+            <!-- Rating Selection -->
+            <div class="rating">
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="1">1 - Poor</option>
+                </select>
+            </div>
+
+            <!-- Comment Box -->
+            <div class="comment">
+                <label for="comment">Write Your Review:</label>
+                <textarea id="comment" rows="5" placeholder="Share your thoughts on the product..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FurnitureHub. All rights reserved.</p>
+    </footer>
+
+    <script src="review.js"></script>
+</body>
+</html>

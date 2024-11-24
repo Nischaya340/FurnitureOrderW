@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #131a15dd;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; /* Centers the main content horizontally */
+    align-items: center; /* Centers the main content vertically */
+    height: 100vh; /* Makes the body take full viewport height */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color:#0F52BA ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0F52BA;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0F52BA;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #0F52BA;
+}
+
+/* Customization Section */
+.customization {
+    display: flex;
+    justify-content: center; /* Centers the product details and options */
+    align-items: center; /* Aligns items vertically */
+    gap: 40px; /* Adds space between the sections */
+    padding: 40px 20px;
+    width: 90%; /* Restricts the content width */
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details */
+.product-details {
+    flex: 1; /* Allows equal space for both sections */
+    max-width: 50%;
+    text-align: center; /* Centers the content inside this section */
+}
+
+.product-details img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-details h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.product-details p {
+    font-size: 24px;
+    color: #666;
+}
+
+/* Customization Options */
+.customization-options {
+    flex: 1; /* Allows equal space for both sections */
+    max-width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers text and form elements inside */
+}
+
+.customization-options h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.option-group {
+    margin-bottom: 20px;
+}
+
+.option-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.option-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    position: fixed; /* Keeps the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+}
